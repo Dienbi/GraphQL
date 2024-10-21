@@ -33,6 +33,7 @@ type Mutation {
     createRendezVous(id: Int, date: String, heure: String, refLog: Int, numTel: String): Boolean
     updateRendezVous(id: Int!, date: String!, heure: String!, numTel: String!): Boolean
     deleteRendezVous(id:Int!):Boolean
+    createLogement(ref: Int, adresse: String, delegation: String, gouvernorat: String, type: Type, description: String, prix: Float): Boolean
 }
 schema{
     query: Querries

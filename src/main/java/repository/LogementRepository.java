@@ -4,6 +4,7 @@ import java.util.List;
 
 import entite.Logement;
 import entite.Logement.Type;
+import entite.RendezVous;
 
 public class LogementRepository {
     
@@ -13,8 +14,8 @@ public class LogementRepository {
     	logements=new ArrayList<Logement>();
     	logements.add(new Logement(1,"27, Rue des roses", "El ghazela","Ariana",Type.Studio,"cuisine equipee",300f));
 		logements.add(new Logement(5,"58, Rue des roses", "El ghazela","Ariana",Type.EtageVilla,"cuisine equipee",450f));
-		logements.add(new Logement(2,"201, Résidence Omrane4", "Riadh El Andalous","Ariana",Type.Appartement,"chauffage central, ascenseur, climatisation",700f));
-		logements.add(new Logement(3,"540, Résidence Les Tulipes", "El Aouina","Ariana",Type.Appartement,"S+2, chauffage central, ascenseur, climatisation",500f));
+		logements.add(new Logement(2,"201, Rï¿½sidence Omrane4", "Riadh El Andalous","Ariana",Type.Appartement,"chauffage central, ascenseur, climatisation",700f));
+		logements.add(new Logement(3,"540, Rï¿½sidence Les Tulipes", "El Aouina","Ariana",Type.Appartement,"S+2, chauffage central, ascenseur, climatisation",500f));
 		logements.add(new Logement(4,"78, Rue des Oranges", "Bardo","Tunis",Type.EtageVilla,"chauffage central, ascenseur, climatisation",400f));
 	 }
 
@@ -41,6 +42,6 @@ public class LogementRepository {
 		}
 		return null;
 	}
-    
+
     
 }

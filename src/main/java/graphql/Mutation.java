@@ -2,6 +2,7 @@
 package graphql;
 
 import com.coxautodev.graphql.tools.GraphQLRootResolver;
+import entite.Logement;
 import entite.RendezVous;
 import repository.LogementRepository;
 import repository.RendezVousRepository;
@@ -27,5 +28,13 @@ public class Mutation implements GraphQLRootResolver {
     public boolean deleteRendezVous(int id) {
         return rdvRepository.deleteRendezVous(id);
     }
+    public boolean createLogement(int reference, String adresse, String delegation, String gouvernorat, Logement.Type type, String description, float prix) {
+        Logement logement = new Logement(reference, adresse, delegation, gouvernorat, type, description, prix);
+        logRepository.saveLogement(logement);
+        return true;
+    }
+
+
 
 }
+
